@@ -7,12 +7,12 @@ jpg_files = sorted([f for f in os.listdir() if f.endswith(".jpg")])
 txt_files = sorted([f for f in os.listdir() if f.endswith(".txt")])
 
 for i, file in enumerate(jpg_files, start=1):
-    new_name = f"{i+33}.jpg"
+    new_name = f"{i+41}.jpg"
     os.rename(file, new_name)
     print(f"Renamed {file} -> {new_name}")
 
 for i, file in enumerate(txt_files, start=1):
-    new_name = f"{i}.txt"
+    new_name = f"{i+41}.txt"
     os.rename(file, new_name)
     print(f"Renamed {file} -> {new_name}")
 
